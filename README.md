@@ -2,7 +2,7 @@
 Expected for further updation, we will update this pretty soon...
 # Data-Efficient Reinforcement Learning with Self-Predictive Representations
 
-*Wangzi xing\*, Maowei Jiang*
+*Wangzi xing\*, Maowei Jiang\*  
 
 This repo provides code for implementing the [SPR paper](https://openreview.net/forum?id=H8RgPl5OQX)
 
