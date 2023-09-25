@@ -45,9 +45,11 @@ Maowei Jiang: jiangmaowei@sia.cn
 
 Thank you all for your attention to our work!
 
-This code uses ([Autoformer](https://github.com/thuml/Autoformer),[Informer](https://github.com/zhouhaoyi/Informer2020), [Reformer](https://github.com/lucidrains/reformer-pytorch), [Transformer](https://github.com/jadore801120/attention-is-all-you-need-pytorch), [LSTM](https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction),[N-HiTS](https://github.com/Nixtla/neuralforecast), [N-BEATS](https://github.com/ServiceNow/N-BEATS), [Pyraformer](https://github.com/alipay/Pyraformer), [ARIMA](https://github.com/gmonaci/ARIMA)) as baseline methods for comparison and further improvement.
+This code uses (DQN, DDPG, PPO, SAC) as baseline methods for comparison and further improvement.
 
 We appreciate the following github repos a lot for their valuable code base or datasets:
+
+https://github.com/haarnoja/sac
 
 https://github.com/mila-iqia/spr
 
