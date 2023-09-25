@@ -1,6 +1,5 @@
 # Enhancing Data Efficiency in Reinforcement Learning: A Novel Imagination Mechanism Based on Mesh Information Propagation
 Expected for further updation, we will update this pretty soon...
-# Data-Efficient Reinforcement Learning with Self-Predictive Representations
 
 *Zixing Wang\*, Maowei Jiang\*  
 
