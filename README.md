@@ -4,7 +4,7 @@ Expected for further updation, we will update this pretty soon...
 
 *Wangzi xing\*, Maowei Jiang*
 
-This repo provides code for implementing the [SPR paper](https://arxiv.org/abs/2007.05929)
+This repo provides code for implementing the [SPR paper](https://openreview.net/forum?id=H8RgPl5OQX)
 
 * [📦 Install ](#install) -- Install relevant dependencies and the project
 * [🔧 Usage ](#usage) -- Commands to run different experiments from the paper
@@ -21,7 +21,7 @@ export LANG=C.UTF-8
 pip install -r requirements.txt
 
 # Finally, clone the project
-git clone https://github.com/mila-iqia/spr
+git clone https://github.com/OuAzusaKou/imagination_mechanism
 ```
 
 ## Usage:
