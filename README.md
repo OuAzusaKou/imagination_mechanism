@@ -38,7 +38,7 @@ Update pretty soon...
 If you have any questions, feel free to contact us or post github issues. Pull requests are highly welcomed!
 
 ```
-Zixing Wang: l915917440@vip.qq.com
+Zixing Wang: wangzihang21@mails .ucas.ac.cn
 Maowei Jiang: jiangmaowei@sia.cn
 ```
 
