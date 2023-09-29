@@ -1,9 +1,6 @@
 # Enhancing Data Efficiency in Reinforcement Learning: A Novel Imagination Mechanism Based on Mesh Information Propagation
 Expected for further updation, we will update this pretty soon...
 
-*Zixing Wang\*, Maowei Jiang\*  
-
-This repo provides code for implementing the [IM paper](https://arxiv.org/pdf/2309.14243.pdf)
 
 Openreview-Link:[comments](https://openreview.net/forum?id=H8RgPl5OQX)
 
@@ -37,10 +34,6 @@ Update pretty soon...
 
 If you have any questions, feel free to contact us or post github issues. Pull requests are highly welcomed!
 
-```
-Zixing Wang: wangzihang21@mails .ucas.ac.cn
-Maowei Jiang: jiangmaowei@sia.cn
-```
 
 
 ## Acknowledgements
