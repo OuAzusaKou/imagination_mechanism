@@ -15,6 +15,11 @@ conda install pytorch torchvision -c pytorch
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 
+# clone the Jueru RL lib and install.
+git clone https://github.com/OuAzusaKou/RL_lib
+
+python setup.py install
+
 # Install requirements
 pip install -r requirements.txt
 
