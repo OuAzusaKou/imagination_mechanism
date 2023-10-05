@@ -24,7 +24,11 @@ git clone https://github.com/OuAzusaKou/imagination_mechanism
 
 ## Usage:
 ```bash
+# Train the IM+SAC
 python sac_imagination.py
+
+# monitor the result by tensorboard
+tensorboard --logdir SAC_tensorboard/.
 ```
 update pretty soon...
 
