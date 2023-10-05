@@ -23,11 +23,13 @@ git clone https://github.com/OuAzusaKou/imagination_mechanism
 ```
 
 ## Usage:
-
+```bash
+python sac_imagination.py
+```
 update pretty soon...
 
 ## What does each file do? 
-python sac_imagination.py
+
 Update pretty soon...
 
 ## Contact
