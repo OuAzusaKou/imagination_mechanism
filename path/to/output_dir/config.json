@@ -1,14 +1,20 @@
 {
-    "ac_kwargs":	{},
+    "ac_kwargs":	{
+        "activation":	"ReLU",
+        "hidden_sizes":	[
+            256,
+            256
+        ]
+    },
     "actor_critic":	"MLPActorCritic",
     "alpha":	0.2,
     "batch_size":	100,
-    "env_fn":	"<function <lambda> at 0x7fbd4dd93c80>",
+    "env_fn":	"<function <lambda> at 0x7f7c5baa82f0>",
     "epochs":	100,
     "exp_name":	"experiment_name",
     "gamma":	0.99,
     "logger":	{
-        "<spinup.utils.logx.EpochLogger object at 0x7fbd4dd0e278>":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f7c58ec7470>":	{
             "epoch_dict":	{},
             "exp_name":	"experiment_name",
             "first_row":	true,
@@ -33,8 +39,8 @@
     "replay_size":	1000000,
     "save_freq":	1,
     "seed":	0,
-    "start_steps":	1000,
-    "steps_per_epoch":	2000,
+    "start_steps":	10000,
+    "steps_per_epoch":	4000,
     "update_after":	1000,
     "update_every":	50
 }

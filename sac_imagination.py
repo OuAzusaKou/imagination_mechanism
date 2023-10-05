@@ -112,6 +112,6 @@ sac = SAC_IMG_Algorithm(agent_class=Sac_agent,
                      start_steps=1500,
                      max_episode_steps=1000,
                      )
-
+# 1e-3 0.001
 sac.learn(num_train_step=500000, actor_update_freq=2,imagination_net=img_net,sim_lr=1e-2, sim_scale=0.002, reward_scale=2.0)
 

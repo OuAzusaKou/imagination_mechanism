@@ -6,7 +6,7 @@
 # k: head num for Sim
 # feature_dim: feature dimension
 # q,q_n: shape: [B,k*feature_dim]
-f_k.params = f_q.params
+f_q.params = f_k.params
 
 for s_n,a_n in loader: # load minibatch from buffer
 
@@ -19,7 +19,7 @@ for s_n,a_n in loader: # load minibatch from buffer
 
     d = T(v)
 
-    loss = MSE(Critic(s,a) + d,Critic(s_n,a_n)
+    loss = MSE(Critic(s,a) + d, Critic(s_n,a_n))
     loss.backward()
     update(f_q.params) # Adam
     f_k.params = m*f_k.params+(1-m)*f_q.params
