@@ -14,6 +14,14 @@ import highway_env
 import modified_parking_env
 from img_module import MultiHeadSimilarityNetwork, SAC_IMG_Algorithm
 
+seed = 13
+np.random.seed(seed)
+torch.manual_seed(seed)
+
+# 如果你使用GPU，还可以设置GPU随机种子
+if torch.cuda.is_available():
+    torch.cuda.manual_seed(seed)
+
 device = torch.device('cuda:0')
 # env = gym.make('Pendulum-v0')
 
@@ -102,7 +110,7 @@ sac = SAC_IMG_Algorithm(agent_class=Sac_agent,
                      gamma=0.99,
                      batch_size=100,
                      tensorboard_log="./SAC_tensorboard",
-                     render=True,
+                     render=False,
                      action_noise=0.1,
                      min_update_step=1000,
                      update_step=100,
@@ -111,7 +119,8 @@ sac = SAC_IMG_Algorithm(agent_class=Sac_agent,
                      device=device,
                      start_steps=1500,
                      max_episode_steps=1000,
+                     save_mode='eval',
+                     eval_freq=10,
                      )
 # 1e-3 0.001
 sac.learn(num_train_step=500000, actor_update_freq=2,imagination_net=img_net,sim_lr=1e-2, sim_scale=0.002, reward_scale=2.0)
-

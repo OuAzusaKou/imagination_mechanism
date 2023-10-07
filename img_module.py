@@ -56,10 +56,10 @@ class MultiHeadSimilarityNetwork(nn.Module):
         # a_n_emb = F.relu(self.fc_a(a_n))
 
         o_emb = (self.fc_o(o))
-        o_n_emb = (self.fc_o(o_n))
-        # with torch.no_grad():
         a_emb = (self.fc_a(a))
-        a_n_emb =(self.fc_a(a_n))
+        with torch.no_grad():
+            o_n_emb = (self.fc_o(o_n))
+            a_n_emb =(self.fc_a(a_n))
 
 
 
@@ -104,7 +104,7 @@ class SAC_IMG_Algorithm(SACAlgorithm):
 
     def imagination_update(self, data, num_iters, sim_scale,step):
 
-        def compute_loss_q(data , data_new):
+        def compute_loss_q(data, data_new):
             o, a, r, o2, d = data['obs'], data['act'], data['rew'], data['obs2'], data['done']
             # print('i',o.shape)
             # 获取键对应的列表
@@ -140,8 +140,8 @@ class SAC_IMG_Algorithm(SACAlgorithm):
 
             q1_new = self.agent.functor_dict['critic'].Q1(o_n, a_n)
             q2_new = self.agent.functor_dict['critic'].Q2(o_n, a_n)
-            q1_backup = q1_new + self.sim_net(o_n, a_n, o, a)
-            q2_backup = q2_new + self.sim_net(o_n, a_n, o, a)
+            q1_backup = q1_new + self.sim_net(o, a, o_n, a_n)
+            q2_backup = q2_new + self.sim_net(o, a, o_n, a_n)
             # Bellman backup for Q functions
             # with torch.no_grad():
             #     # Target actions come from *current* policy
